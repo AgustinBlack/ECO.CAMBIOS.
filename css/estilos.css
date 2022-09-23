@@ -72,7 +72,7 @@ section{
 
 .objetivo__general {
     display: grid; 
-    grid-template-columns: 0.5fr 1.5fr; 
+    grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
@@ -86,19 +86,25 @@ section{
     border-radius: 500px;
     padding: 20px;
   }
+
+  .objetivo__general__foto1:hover{
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
   
   .objetivo__general__foto2 { 
     grid-area: objetivo__general__foto2;
     width: 300px;
     border-radius: 10px;
-    padding-left: 300px; 
   }
   
-  .objetivo__general__parrafo1 { 
+  .objetivo__general__parrafo1{ 
     grid-area: objetivo__general__parrafo1;
     padding: 10px;
     margin-top: 73px;
     margin-right: 359px;
+    display: flex;
+    flex-wrap: wrap;
   }
   
   .objetivo__general__parrafo2 { 
