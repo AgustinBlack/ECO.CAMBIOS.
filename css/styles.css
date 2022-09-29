@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.productos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.productos .card {
+  background-color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.productos .card .card-img-top {
+  width: 199px;
+  height: 153px;
+}
+.productos .card .card-title {
+  padding: 10px;
+}
+.productos .card .card-text {
+  padding: 10px;
+}
+.productos .card .btn-primary {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+.productos .card .btn-primary:hover {
+  background-color: rgb(152, 103, 53);
+  transition: 0.5s;
+  color: white;
+}
+
+.objetivo__general {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "objetivo__general__foto1 objetivo__general__parrafo1" "objetivo__general__parrafo2 objetivo__general__foto2";
+}
+.objetivo__general .objetivo__general__foto1 {
+  grid-area: objetivo__general__foto1;
+  width: 250px;
+  border-radius: 500px;
+  padding: 20px;
+}
+.objetivo__general .objetivo__general__foto2 {
+  grid-area: objetivo__general__foto2;
+  width: 300px;
+  border-radius: 10px;
+}
+.objetivo__general .objetivo__general__parrafo1 {
+  grid-area: objetivo__general__parrafo1;
+  padding: 10px;
+  margin-top: 73px;
+  margin-right: 359px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.objetivo__general .objetivo__general__parrafo2 {
+  grid-area: objetivo__general__parrafo2;
+  padding: 10px;
+  margin-top: 73px;
+  margin-right: 359px;
+}
+
+.form .form__inicial {
+  background: rgb(235, 224, 198);
+  width: 90%;
+  max-width: 650px;
+  margin: auto;
+  padding: 5px 35px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 3px;
+}
+.form .form__inicial .form__contacto .form__contacto__titulo {
+  font-weight: normal;
+  text-align: center;
+  padding: 14px 0;
+  font-family: "Poppins", sans-serif;
+}
+.form .form__inicial .form__contacto .form__contacto__titulo span {
+  color: #fff;
+}
+.form .form__inicial .form__label {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 1em;
+}
+.form .form__inicial .form__input {
+  background-color: rgba(235, 228, 220, 0.7);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #7a5535;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+.form .form__inicial .form__mensaje {
+  background-color: rgba(235, 228, 220, 0.7);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #7a5535;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  resize: vertical;
+  max-height: 150px;
+  min-height: 50px;
+}
+.form .form__inicial .form__enviar {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  background: rgb(235, 224, 198);
+  font-size: 1em;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 0;
+  cursor: pointer;
+}
+.form .form__inicial .form__enviar:hover {
+  background-color: rgb(152, 103, 53);
+  transition: 0.5s;
+  color: white;
+}
+
+h1 {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: center;
+  margin-top: 11px;
+}
+
+.preguntas-frecuentes {
+  padding: 20px;
+  margin: 21px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.pie-pagina {
+  width: 100%;
+  background-color: #9d6534;
+  border: white solid 5px;
+  margin-top: 80px;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+  color: white;
+}
+.pie-pagina .grupo-1 .redes-sociales {
+  display: flex;
+  flex-direction: row;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(224, 212, 193);
+}
+
+/* INICIO */
+.logoEcocambios {
+  margin-top: -310px;
+  margin-bottom: -330px;
+  width: 1540px;
+  height: 900px;
+}
+
+ul {
+  background: rgb(235, 224, 198);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+ul li {
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 8px;
+  margin: 8px;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  border: thin white;
+  text-transform: uppercase;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+ul li a:hover {
+  background-color: rgb(152, 103, 53);
+  transition: 0.5s;
+  color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section .imagenesInicio {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 10px white solid;
+}
+
+@media (max-width: 500px) {
+  nav {
+    padding-top: 76px;
+  }
+  .sobre-nosotros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .redes-sociales {
+    display: flex;
+    flex-direction: row;
+  }
+  .titulo-redes {
+    padding: 20px;
+  }
+  ul {
+    width: 100%;
+    font-size: small;
+    display: inline-flex;
+    padding-left: 4px;
+  }
+  li {
+    margin: 1px;
+    display: flex;
+    justify-items: center;
+    display: inline;
+  }
+  .primerLi {
+    padding-left: 0px;
+  }
+  .ultimoLi {
+    padding-right: 0px;
+  }
+  .logoEcocambios {
+    width: 513px;
+    height: 328px;
+    margin-top: -251px;
+    margin-bottom: -200px;
+  }
+  nav ul li a {
+    display: inline;
+    margin-left: -4px;
+  }
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form {
+    margin-right: 50px;
+    margin-left: 25px;
+  }
+  .objetivo__general {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "objetivo__general__foto1" "objetivo__general__parrafo1" "objetivo__general__foto2" "objetivo__general__parrafo2";
+  }
+  .objetivo__general__foto1 {
+    grid-area: objetivo__general__foto1;
+  }
+  .objetivo__general__parrafo1 {
+    grid-area: objetivo__general__parrafo1;
+  }
+  .objetivo__general__foto2 {
+    grid-area: objetivo__general__foto2;
+  }
+  .objetivo__general__parrafo2 {
+    grid-area: objetivo__general__parrafo2;
+  }
+}/*# sourceMappingURL=styles.css.map */

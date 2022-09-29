@@ -1,0 +1,25 @@
+.pie-pagina{
+    width: 100%;
+    background-color: #9d6534;
+    border: white solid 5px;
+    margin-top: 80px;
+    .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+        color: white;
+        .redes-sociales{
+            display: flex;
+            flex-direction: row;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            color: #fff;
+            margin-right: 10px;
+        }
+    }
+}

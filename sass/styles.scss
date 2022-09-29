@@ -1,0 +1,148 @@
+@import "productos";
+@import "objetivos";
+@import "contacto";
+@import "preguntas";
+@import "footer";
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(224, 212, 193);
+}
+
+/* INICIO */
+
+.logoEcocambios{
+    margin-top: -310px;
+    margin-bottom: -330px;
+    width: 1540px;
+    height: 900px;
+}
+
+ul{
+    background: rgb(235, 224, 198);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    li {
+        color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 8px;
+        margin: 8px;
+        a{
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+            border: thin white;
+            text-transform: uppercase;
+            width: max-content;
+            padding: 8px 12px;
+            border-radius: 3px;
+        }
+        a:hover{
+            background-color: rgb(152, 103, 53);
+            transition: 0.5s;
+            color: white;
+        }
+    }
+}
+  
+section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .imagenesInicio{
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 10px;
+        border: 10px white solid;
+    }
+}
+
+
+@media(max-width: 500px){
+    nav{
+        padding-top: 76px;
+    }
+    .sobre-nosotros{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .redes-sociales{
+        display: flex;
+        flex-direction: row;
+    }
+    .titulo-redes{
+        padding: 20px;
+    }
+    ul{
+        width: 100%;
+        font-size: small;
+        display: inline-flex;
+        padding-left: 4px;
+    }
+    li{
+        margin: 1px;
+        display: flex;
+        justify-items: center;
+        display: inline;
+    }
+    .primerLi{
+        padding-left: 0px;
+    }
+    .ultimoLi{
+        padding-right: 0px;
+    }
+    .logoEcocambios{
+        width: 513px;
+        height: 328px;
+        margin-top: -251px;
+        margin-bottom: -200px;
+    }
+    nav ul li a{
+        display:inline;
+        margin-left: -4px;
+    }
+    .productos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .form{
+        margin-right: 50px;
+        margin-left: 25px;
+    }
+    
+    .objetivo__general {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "objetivo__general__foto1"
+          "objetivo__general__parrafo1"
+          "objetivo__general__foto2"
+          "objetivo__general__parrafo2";
+      }
+      
+      .objetivo__general__foto1 { grid-area: objetivo__general__foto1; }
+      
+      .objetivo__general__parrafo1 { grid-area: objetivo__general__parrafo1; }
+      
+      .objetivo__general__foto2 { grid-area: objetivo__general__foto2; }
+      
+      .objetivo__general__parrafo2 { grid-area: objetivo__general__parrafo2; }
+      
+}

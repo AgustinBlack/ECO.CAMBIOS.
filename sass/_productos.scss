@@ -1,0 +1,36 @@
+.productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    .card{
+        background-color: #fff;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        .card-img-top{
+            width: 199px;
+            height: 153px;
+        }
+        .card-title{
+            padding: 10px;
+        }
+        .card-text{
+            padding: 10px;
+        }
+        .btn-primary{
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .btn-primary:hover{
+            background-color: rgb(152, 103, 53);
+            transition: 0.5s;
+            color: white;
+        }
+    }
+}
