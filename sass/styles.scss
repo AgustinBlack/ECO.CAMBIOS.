@@ -3,9 +3,6 @@
 @import "contacto";
 @import "preguntas";
 @import "footer";
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     padding: 0;
@@ -18,39 +15,21 @@ body{
 
 /* INICIO */
 
-.logoEcocambios{
-    margin-top: -310px;
-    margin-bottom: -330px;
-    width: 1540px;
-    height: 900px;
-}
-
 ul{
-    background: rgb(235, 224, 198);
-    display: flex;
+    list-style: none;
     flex-direction: row;
-    justify-content: space-around;
-    li {
-        color: rgb(0, 0, 0);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 8px;
-        margin: 8px;
+    li{
+        padding: 5px;
         a{
             text-decoration: none;
-            color: black;
-            cursor: pointer;
-            border: thin white;
-            text-transform: uppercase;
-            width: max-content;
-            padding: 8px 12px;
+            color: white;
+            padding: 5px;
             border-radius: 3px;
         }
         a:hover{
-            background-color: rgb(152, 103, 53);
             transition: 0.5s;
-            color: white;
+            color: black;
+            background-color: white;
         }
     }
 }
