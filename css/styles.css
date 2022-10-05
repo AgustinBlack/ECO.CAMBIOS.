@@ -2,18 +2,13 @@
 .productos {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .productos .card {
   background-color: #fff;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-bottom: 10px;
   margin-top: 20px;
   border-radius: 10px;
-  display: flex;
-  flex-wrap: wrap;
 }
 .productos .card div {
   padding: 8px;
@@ -35,6 +30,8 @@
   cursor: pointer;
   padding: 10px;
   border-radius: 5px;
+  border: 2px solid rgb(152, 103, 53);
+  background-color: white;
 }
 .productos .card .btn-primary:hover {
   background-color: rgb(152, 103, 53);
@@ -42,18 +39,10 @@
   color: white;
 }
 
-.objetivo__general {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "objetivo__general__foto1 objetivo__general__parrafo1" "objetivo__general__parrafo2 objetivo__general__foto2";
-}
 .objetivo__general .objetivo__general__foto1 {
   grid-area: objetivo__general__foto1;
   width: 250px;
   border-radius: 500px;
-  padding: 20px;
 }
 .objetivo__general .objetivo__general__foto2 {
   grid-area: objetivo__general__foto2;
@@ -63,16 +52,12 @@
 .objetivo__general .objetivo__general__parrafo1 {
   grid-area: objetivo__general__parrafo1;
   padding: 10px;
-  margin-top: 73px;
-  margin-right: 359px;
   display: flex;
   flex-wrap: wrap;
 }
 .objetivo__general .objetivo__general__parrafo2 {
   grid-area: objetivo__general__parrafo2;
   padding: 10px;
-  margin-top: 73px;
-  margin-right: 359px;
 }
 
 .form .form__inicial {
@@ -232,9 +217,6 @@ section .imagenesInicio {
 }
 
 @media (max-width: 500px) {
-  nav {
-    padding-top: 76px;
-  }
   .sobre-nosotros {
     display: flex;
     flex-direction: row;
@@ -248,34 +230,6 @@ section .imagenesInicio {
   .titulo-redes {
     padding: 20px;
   }
-  ul {
-    width: 100%;
-    font-size: small;
-    display: inline-flex;
-    padding-left: 4px;
-  }
-  li {
-    margin: 1px;
-    display: flex;
-    justify-items: center;
-    display: inline;
-  }
-  .primerLi {
-    padding-left: 0px;
-  }
-  .ultimoLi {
-    padding-right: 0px;
-  }
-  .logoEcocambios {
-    width: 513px;
-    height: 328px;
-    margin-top: -251px;
-    margin-bottom: -200px;
-  }
-  nav ul li a {
-    display: inline;
-    margin-left: -4px;
-  }
   .productos {
     display: flex;
     flex-wrap: wrap;
@@ -283,25 +237,5 @@ section .imagenesInicio {
   .form {
     margin-right: 50px;
     margin-left: 25px;
-  }
-  .objetivo__general {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "objetivo__general__foto1" "objetivo__general__parrafo1" "objetivo__general__foto2" "objetivo__general__parrafo2";
-  }
-  .objetivo__general__foto1 {
-    grid-area: objetivo__general__foto1;
-  }
-  .objetivo__general__parrafo1 {
-    grid-area: objetivo__general__parrafo1;
-  }
-  .objetivo__general__foto2 {
-    grid-area: objetivo__general__foto2;
-  }
-  .objetivo__general__parrafo2 {
-    grid-area: objetivo__general__parrafo2;
   }
 }/*# sourceMappingURL=styles.css.map */

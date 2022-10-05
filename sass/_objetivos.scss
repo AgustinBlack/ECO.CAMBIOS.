@@ -1,17 +1,8 @@
 .objetivo__general {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "objetivo__general__foto1 objetivo__general__parrafo1"
-      "objetivo__general__parrafo2 objetivo__general__foto2";
-      
       .objetivo__general__foto1{ 
         grid-area: objetivo__general__foto1;
         width: 250px;
         border-radius: 500px;
-        padding: 20px;
       }
 
       .objetivo__general__foto2 { 
@@ -23,8 +14,6 @@
       .objetivo__general__parrafo1{ 
         grid-area: objetivo__general__parrafo1;
         padding: 10px;
-        margin-top: 73px;
-        margin-right: 359px;
         display: flex;
         flex-wrap: wrap;
       }
@@ -32,7 +21,5 @@
       .objetivo__general__parrafo2 { 
         grid-area: objetivo__general__parrafo2;
         padding: 10px;
-        margin-top: 73px;
-        margin-right: 359px; 
       }
     }
