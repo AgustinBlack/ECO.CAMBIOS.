@@ -40,24 +40,35 @@
 }
 
 .objetivo__general .objetivo__general__foto1 {
-  grid-area: objetivo__general__foto1;
   width: 250px;
   border-radius: 500px;
+  float: left;
 }
 .objetivo__general .objetivo__general__foto2 {
-  grid-area: objetivo__general__foto2;
   width: 300px;
   border-radius: 10px;
+  float: right;
 }
 .objetivo__general .objetivo__general__parrafo1 {
-  grid-area: objetivo__general__parrafo1;
-  padding: 10px;
+  padding: 50px;
   display: flex;
   flex-wrap: wrap;
 }
 .objetivo__general .objetivo__general__parrafo2 {
-  grid-area: objetivo__general__parrafo2;
-  padding: 10px;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.objetivo__general .objetivo__general__foto3 {
+  float: left;
+  border-radius: 150px;
+  width: 250px;
+}
+.objetivo__general .objetivo__general__parrafo3 {
+  padding: 23px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .form .form__inicial {
@@ -228,7 +239,7 @@ section .imagenesInicio {
     flex-direction: row;
   }
   .titulo-redes {
-    padding: 20px;
+    padding-top: 16px;
   }
   .productos {
     display: flex;
@@ -237,5 +248,25 @@ section .imagenesInicio {
   .form {
     margin-right: 50px;
     margin-left: 25px;
+  }
+  .objetivo__general .objetivo__general__foto1 {
+    float: none;
+    margin-left: 57px;
+  }
+  .objetivo__general .objetivo__general__foto2 {
+    float: none;
+    margin-left: 46px;
+  }
+  .objetivo__general .objetivo__general__foto3 {
+    float: none;
+    margin-left: 57px;
+  }
+}
+@media (max-width: 768px) {
+  .grupo-1 .box {
+    padding: 20px;
+  }
+  .productos .card {
+    padding: 1px;
   }
 }/*# sourceMappingURL=styles.css.map */
