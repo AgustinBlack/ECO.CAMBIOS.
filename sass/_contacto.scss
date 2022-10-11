@@ -64,11 +64,11 @@
             color: rgb(255, 255, 255);
             padding: 15px 0;
             cursor: pointer;
-        }
-        .form__enviar:hover{
-            background-color: rgb(152, 103, 53);
-            transition: 0.5s;
-            color: white;
+            &:hover{
+                background-color: rgb(152, 103, 53);
+                transition: 0.5s;
+                color: white;
+            }
         }
     }
 }

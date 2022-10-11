@@ -29,11 +29,11 @@
             border-radius: 5px;
             border: 2px solid rgb(152, 103, 53);
             background-color: white;
-        }
-        .btn-primary:hover{
-            background-color: rgb(152, 103, 53);
-            transition: 0.5s;
-            color: white;
+            &:hover{
+                background-color: rgb(152, 103, 53);
+                transition: 0.5s;
+                color: white;
+            }
         }
     }
 

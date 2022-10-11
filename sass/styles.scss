@@ -25,11 +25,11 @@ ul{
             color: white;
             padding: 5px;
             border-radius: 3px;
-        }
-        a:hover{
-            transition: 0.5s;
-            color: black;
-            background-color: white;
+            &:hover{
+                transition: 0.5s;
+                color: black;
+                background-color: white;
+            }
         }
     }
 }
