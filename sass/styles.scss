@@ -57,33 +57,50 @@ section{
         flex-wrap: wrap;
         padding: 20px;
     }
+
     .redes-sociales{
         display: flex;
         flex-direction: row;
     }
+
     .titulo-redes{
         padding-top: 16px;
     }
+
     .productos{
         display: flex;
         flex-wrap: wrap;
     }
+
     .form{
         margin-right: 50px;
         margin-left: 25px;
     }
-    .objetivo__general{
-        .objetivo__general__foto1{
-            float: none;
-            margin-left: 57px;
-        }
-        .objetivo__general__foto2{
-            float: none;
-            margin-left: 46px;
-        }
-        .objetivo__general__foto3{
-            float: none;
-            margin-left: 57px;
+    .objetivo{
+        .objetivo__general{
+            .div__foto1{
+                display: flex;
+                justify-content: center;
+                .objetivo__general__foto1{
+                    float: none;
+                }
+            }
+    
+            .div__foto2{
+                display: flex;
+                justify-content: center;
+                .objetivo__general__foto2{
+                    float: none;
+                }
+            }
+    
+            .div__foto3{
+                display: flex;
+                justify-content: center;
+                .objetivo__general__foto3{
+                    float: none;
+                }
+            }
         }
     }
 }

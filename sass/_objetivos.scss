@@ -11,6 +11,12 @@
         float: right;
       }
 
+      .objetivo__general__foto3{
+        float: left;
+        border-radius: 150px;
+        width: 250px;
+      }
+
       .objetivo__general__parrafo1{ 
         padding: 50px;
         display: flex;
@@ -23,14 +29,8 @@
         flex-wrap: wrap;
       }
 
-      .objetivo__general__foto3{
-        float: left;
-        border-radius: 150px;
-        width: 250px;
-      }
-
       .objetivo__general__parrafo3{
-        padding: 23px;
+        padding: 50px;
         display: flex;
         flex-wrap: wrap;
         margin-top: 20px;
