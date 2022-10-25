@@ -33,7 +33,7 @@ ul{
         }
     }
 }
-  
+
 section{
     display: flex;
     flex-direction: row;
@@ -48,7 +48,6 @@ section{
         border: 10px white solid;
     }
 }
-
 
 @media(max-width: 500px){
     .sobre-nosotros{
@@ -67,11 +66,6 @@ section{
         padding-top: 16px;
     }
 
-    .productos{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     .form{
         margin-right: 50px;
         margin-left: 25px;
@@ -85,7 +79,13 @@ section{
                     float: none;
                 }
             }
-    
+
+            .div__parrafo1{
+                .objetivo__general__parrafo1{
+                    text-align: center;
+                }
+            }
+
             .div__foto2{
                 display: flex;
                 justify-content: center;
@@ -93,7 +93,13 @@ section{
                     float: none;
                 }
             }
-    
+
+            .div__parrafo2{
+                .objetivo__general__parrafo2{
+                    text-align: center;
+                }
+            }
+
             .div__foto3{
                 display: flex;
                 justify-content: center;
@@ -101,19 +107,59 @@ section{
                     float: none;
                 }
             }
+
+            .div__parrafo3{
+                .objetivo__general__parrafo3{
+                    text-align: center;
+                }
+            }
         }
     }
+    .container-card{
+        .card{
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        img{
+            height: 150px;
+        }
+	}
 }
 
 @media(max-width: 768px){
-    .grupo-1{
-        .box{
-            padding: 20px;
-        }
+    .container-card{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 375px;
+        justify-content: center;
+        align-content: center;
     }
-    .productos{
-        .card{
-            padding: 1px;
-        }
+    .sobre-nosotros{
+        padding-left: 50px;
     }
 }
+
+@media(max-width: 1024px){
+    .imagenes{
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .container-card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .card{
+            width: 300px;
+        }
+    }
+    .sobre-nosotros{
+        padding-left: 50px;
+    }
+}
+

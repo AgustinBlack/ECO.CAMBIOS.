@@ -1,53 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-.productos {
+.container-card {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  max-width: 1500px;
+  margin: auto;
+  padding-top: 10px;
 }
-.productos .card {
-  background-color: #fff;
-  margin-top: 20px;
-  border-radius: 10px;
+.container-card .card {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-out;
+  cursor: default;
 }
-.productos .card div {
-  padding: 8px;
+.container-card .card .contenido-card {
+  padding: 15px;
+  text-align: center;
 }
-.productos .card .card-img-top {
-  width: 199px;
-  height: 153px;
+.container-card .card .contenido-card h3 {
+  margin-bottom: 15px;
+  color: #7a7a7a;
 }
-.productos .card .card-title {
+.container-card .card .contenido-card p {
+  line-height: 1.8;
+  color: #6a6a6a;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.container-card .card .contenido-card a {
+  display: inline-block;
   padding: 10px;
-}
-.productos .card .card-text {
-  padding: 10px;
-  width: 190px;
-}
-.productos .card .btn-primary {
+  margin-top: 10px;
   text-decoration: none;
   color: black;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 5px;
-  border: 2px solid rgb(152, 103, 53);
-  background-color: white;
+  border: 1px solid rgb(152, 103, 53);
+  border-radius: 4px;
+  transition: all 400ms ease;
+  margin-bottom: 5px;
 }
-.productos .card .btn-primary:hover {
-  background-color: rgb(152, 103, 53);
-  transition: 0.5s;
-  color: white;
+.container-card .card .contenido-card a:hover {
+  background: rgb(152, 103, 53);
+  color: #fff;
+}
+.container-card .card img {
+  width: 100%;
+  height: 260px;
+}
+.container-card .card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
 }
 
 .objetivo__general .objetivo__general__foto1 {
+  height: none;
   width: 250px;
   border-radius: 500px;
   float: left;
 }
 .objetivo__general .objetivo__general__foto2 {
+  height: none;
   width: 300px;
   border-radius: 10px;
   float: right;
+}
+.objetivo__general .objetivo__general__foto3 {
+  height: none;
+  width: 250px;
+  float: left;
+  border-radius: 150px;
 }
 .objetivo__general .objetivo__general__parrafo1 {
   padding: 50px;
@@ -59,13 +82,8 @@
   display: flex;
   flex-wrap: wrap;
 }
-.objetivo__general .objetivo__general__foto3 {
-  float: left;
-  border-radius: 150px;
-  width: 250px;
-}
 .objetivo__general .objetivo__general__parrafo3 {
-  padding: 23px;
+  padding: 50px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
@@ -131,6 +149,7 @@
   background: rgb(235, 224, 198);
   font-size: 1em;
   border: none;
+  border-radius: 3px;
   color: rgb(255, 255, 255);
   padding: 15px 0;
   cursor: pointer;
@@ -241,32 +260,80 @@ section .imagenesInicio {
   .titulo-redes {
     padding-top: 16px;
   }
-  .productos {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .form {
     margin-right: 50px;
     margin-left: 25px;
   }
-  .objetivo__general .objetivo__general__foto1 {
-    float: none;
-    margin-left: 57px;
+  .objetivo .objetivo__general .div__foto1 {
+    display: flex;
+    justify-content: center;
   }
-  .objetivo__general .objetivo__general__foto2 {
+  .objetivo .objetivo__general .div__foto1 .objetivo__general__foto1 {
     float: none;
-    margin-left: 46px;
   }
-  .objetivo__general .objetivo__general__foto3 {
+  .objetivo .objetivo__general .div__parrafo1 .objetivo__general__parrafo1 {
+    text-align: center;
+  }
+  .objetivo .objetivo__general .div__foto2 {
+    display: flex;
+    justify-content: center;
+  }
+  .objetivo .objetivo__general .div__foto2 .objetivo__general__foto2 {
     float: none;
-    margin-left: 57px;
+  }
+  .objetivo .objetivo__general .div__parrafo2 .objetivo__general__parrafo2 {
+    text-align: center;
+  }
+  .objetivo .objetivo__general .div__foto3 {
+    display: flex;
+    justify-content: center;
+  }
+  .objetivo .objetivo__general .div__foto3 .objetivo__general__foto3 {
+    float: none;
+  }
+  .objetivo .objetivo__general .div__parrafo3 .objetivo__general__parrafo3 {
+    text-align: center;
+  }
+  .container-card .card {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .container-card img {
+    height: 150px;
   }
 }
 @media (max-width: 768px) {
-  .grupo-1 .box {
-    padding: 20px;
+  .container-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 375px;
+    justify-content: center;
+    align-content: center;
   }
-  .productos .card {
-    padding: 1px;
+  .sobre-nosotros {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .imagenes {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .container-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container-card .card {
+    width: 300px;
+  }
+  .sobre-nosotros {
+    padding-left: 50px;
   }
 }/*# sourceMappingURL=styles.css.map */
