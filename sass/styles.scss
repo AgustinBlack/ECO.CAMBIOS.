@@ -49,6 +49,12 @@ section{
     }
 }
 
+@media(max-width: 320px){
+    .imagenesInicio{
+        width: 300px;
+    }
+}
+
 @media(max-width: 500px){
     .sobre-nosotros{
         display: flex;
